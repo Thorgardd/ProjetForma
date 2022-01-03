@@ -1433,28 +1433,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrateur\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\jerem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrateur\\Desktop\\Projet\\ProjetForma\\ProjetForma\\ProjetForma.csproj",
+      "projectUniqueName": "C:\\Users\\jerem\\Desktop\\C#\\Perso\\ProjetForma\\ProjetForma\\ProjetForma.csproj",
       "projectName": "ProjetForma",
-      "projectPath": "C:\\Users\\Administrateur\\Desktop\\Projet\\ProjetForma\\ProjetForma\\ProjetForma.csproj",
-      "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrateur\\Desktop\\Projet\\ProjetForma\\ProjetForma\\obj\\",
+      "projectPath": "C:\\Users\\jerem\\Desktop\\C#\\Perso\\ProjetForma\\ProjetForma\\ProjetForma.csproj",
+      "packagesPath": "C:\\Users\\jerem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jerem\\Desktop\\C#\\Perso\\ProjetForma\\ProjetForma\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Administrateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -1506,7 +1498,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

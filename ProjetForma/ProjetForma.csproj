@@ -17,10 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Communications" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Resource Include="Images\Logo.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
@@ -30,6 +26,10 @@
       <None Update="Img\Logo.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Communications" />
     </ItemGroup>
 
 </Project>

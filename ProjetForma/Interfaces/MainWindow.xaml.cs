@@ -12,6 +12,11 @@ namespace ProjetForma
             InitializeComponent();
         }
         
+        private void MainWindow_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+        
         private void ButtonCanal_OnMouseEnter(object sender, MouseEventArgs e)
         {
             ButtonCanal.Background = Brushes.Chocolate;
