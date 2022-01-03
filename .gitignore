@@ -4,3 +4,7 @@
 .idea
 .vs
 ProjetForma.sln
+ProjetForma/bin
+ProjetForma/bin/*
+ProjetForma/obj/*
+ProjetForma/obj

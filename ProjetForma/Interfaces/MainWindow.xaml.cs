@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using ProjetForma.Interfaces;
 
 namespace ProjetForma
 {
@@ -67,6 +68,27 @@ namespace ProjetForma
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void ButtonUser_OnClick(object sender, RoutedEventArgs e)
+        {
+            Interfaces.Users userWindow = new Interfaces.Users();
+            Close();
+            userWindow.Show();
+        }
+
+        private void ButtonModerate_OnClick(object sender, RoutedEventArgs e)
+        {
+            Moderation moderationWindow = new Moderation();
+            Close();
+            moderationWindow.Show();
+        }
+
+        private void ButtonCanal_OnClick(object sender, RoutedEventArgs e)
+        {
+            Channels channelWindow = new Channels();
+            Close();
+            channelWindow.Show();
         }
     }
 }

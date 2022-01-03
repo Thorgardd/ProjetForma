@@ -122,6 +122,15 @@
                             Click="Button_OnClick"
                             MouseEnter="Button_OnMouseEnter"
                             MouseLeave="Button_OnMouseLeave"/>
+                    
+                    <Button Width="100"
+                            Height="40"
+                            Content="QUITTER"
+                            x:Name="ButtonLeave"
+                            Margin="25,0,0,0"
+                            MouseEnter="ButtonLeave_OnMouseEnter"
+                            MouseLeave="ButtonLeave_OnMouseLeave"
+                            Click="ButtonLeave_OnClick"/>
                 </StackPanel>
                 
             </StackPanel>

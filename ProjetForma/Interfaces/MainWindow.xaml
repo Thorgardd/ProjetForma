@@ -9,7 +9,7 @@
         Background="Transparent"
         WindowStyle="None"
         WindowState="Normal"
-        WindowStartupLocation="Manual"
+        WindowStartupLocation="CenterScreen"
         Width="300"
         Height="500"
         AllowsTransparency="True"
@@ -53,7 +53,8 @@
                         x:Name="ButtonUser"
                         Margin="0,50,0,0"
                         MouseEnter="ButtonUser_OnMouseEnter"
-                        MouseLeave="ButtonUser_OnMouseLeave"/>
+                        MouseLeave="ButtonUser_OnMouseLeave"
+                        Click="ButtonUser_OnClick"/>
 
                 <Button Content="Moderation" 
                         Width="150"
@@ -62,7 +63,8 @@
                         x:Name="ButtonModerate"
                         Margin="0,25,0,0"
                         MouseEnter="ButtonModerate_OnMouseEnter"
-                        MouseLeave="ButtonModerate_OnMouseLeave"/>
+                        MouseLeave="ButtonModerate_OnMouseLeave"
+                        Click="ButtonModerate_OnClick"/>
 
                 <Button Content="Canaux" 
                         Width="150"
@@ -71,7 +73,8 @@
                         x:Name="ButtonCanal"
                         Margin="0,25,0,0"
                         MouseEnter="ButtonCanal_OnMouseEnter"
-                        MouseLeave="ButtonCanal_OnMouseLeave"/>
+                        MouseLeave="ButtonCanal_OnMouseLeave"
+                        Click="ButtonCanal_OnClick"/>
 
                 <Button Content="Quitter"
                         Width="150"

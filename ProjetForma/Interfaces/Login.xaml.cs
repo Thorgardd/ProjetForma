@@ -79,5 +79,22 @@ namespace ProjetForma.Interfaces
         {
             Button.Background = Brushes.Transparent;
         }
+
+        private void ButtonLeave_OnClick(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void ButtonLeave_OnMouseEnter(object sender, MouseEventArgs e)
+        {
+            ButtonLeave.Background = Brushes.DarkRed;
+            ButtonLeave.Foreground = Brushes.White;
+            ButtonLeave.Opacity = 1;
+        }
+
+        private void ButtonLeave_OnMouseLeave(object sender, MouseEventArgs e)
+        {
+            ButtonLeave.Background = Brushes.Transparent;
+        }
     }
 }

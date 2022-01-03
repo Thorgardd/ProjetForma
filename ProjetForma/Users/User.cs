@@ -1,4 +1,8 @@
-﻿namespace ProjetForma.Users
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ProjetForma.Users
 {
     public abstract class User
     {
@@ -6,19 +10,19 @@
         private string _name;
         private string _password;
         private bool _isAdmin;
-
+        
         public int Pid
         {
             get => _pid;
             set => _pid = value;
         }
-
+        
         public string Name
         {
             get => _name;
             set => _name = value;
         }
-
+        
         public string Password
         {
             get => _password;
