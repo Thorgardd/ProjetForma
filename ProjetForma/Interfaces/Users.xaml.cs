@@ -24,9 +24,18 @@ public partial class Users : Window
         DataTable dtbl = new DataTable("partner");
         adapter.Fill(dtbl);
         dtbl.Columns.Remove("password");
+        dtbl.Columns[0].ColumnName = "PId";
+        dtbl.Columns[1].ColumnName = "Nom";
+        dtbl.Columns[2].ColumnName = "Administrateur";
         UserDataGrid.ItemsSource = dtbl.DefaultView;
         adapter.Update(dtbl);
         conn.Close();
+    }
+    
+    private void ButtonAdd_OnClick(object sender, RoutedEventArgs e)
+    {
+        AddUserBox msgBox = new AddUserBox();
+        msgBox.Show();
     }
     
     private void ButtonDelete_OnClick(object sender, RoutedEventArgs e)
