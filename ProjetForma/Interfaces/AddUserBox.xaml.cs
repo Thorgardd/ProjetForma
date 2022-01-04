@@ -12,6 +12,7 @@ namespace ProjetForma.Interfaces
     {
         string[] defaultPassword = new []{"wearehere", "defaultpassword", "syracuse", "iwillbechanged"};
         private Random rnd = new Random();
+        
         public AddUserBox()
         {
             InitializeComponent();
@@ -51,19 +52,19 @@ namespace ProjetForma.Interfaces
             AddButton.Background = Brushes.Transparent;
         }
 
-        private void DeleteButton_OnMouseEnter(object sender, MouseEventArgs e)
+        private void CancelButton_OnMouseEnter(object sender, MouseEventArgs e)
         {
-            DeleteButton.Background = Brushes.DarkRed;
-            DeleteButton.Foreground = Brushes.White;
-            DeleteButton.Opacity = 1;
+            CancelButton.Background = Brushes.DarkRed;
+            CancelButton.Foreground = Brushes.White;
+            CancelButton.Opacity = 1;
         }
 
-        private void DeleteButton_OnMouseLeave(object sender, MouseEventArgs e)
+        private void CancelButton_OnMouseLeave(object sender, MouseEventArgs e)
         {
-            DeleteButton.Background = Brushes.Transparent;
+            CancelButton.Background = Brushes.Transparent;
         }
 
-        private void DeleteButton_OnClick(object sender, RoutedEventArgs e)
+        private void CancelButton_OnClick(object sender, RoutedEventArgs e)
         {
             Close();
         }

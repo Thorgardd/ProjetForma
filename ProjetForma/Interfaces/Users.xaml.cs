@@ -2,18 +2,29 @@
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Data;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
+using ProjetForma.Users;
 
 namespace ProjetForma.Interfaces;
 
 public partial class Users : Window
 {
+    DataTable dtbl = new DataTable("partner");
     public Users()
     {
         InitializeComponent();
     }
-    
+
+    #region Logique Métier
+
     private void BindDataGrid(object sender, RoutedEventArgs e)
+    {
+        GetUserInfos();
+    }
+
+    private void GetUserInfos()
     {
         SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
         conn.Open();
@@ -21,7 +32,6 @@ public partial class Users : Window
         cmd.CommandText = "SELECT * FROM [project].[dbo].[partner]";
         cmd.Connection = conn;
         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-        DataTable dtbl = new DataTable("partner");
         adapter.Fill(dtbl);
         dtbl.Columns.Remove("password");
         dtbl.Columns[0].ColumnName = "PId";
@@ -29,6 +39,7 @@ public partial class Users : Window
         dtbl.Columns[2].ColumnName = "Administrateur";
         UserDataGrid.ItemsSource = dtbl.DefaultView;
         adapter.Update(dtbl);
+        cmd.Dispose();
         conn.Close();
     }
     
@@ -38,10 +49,20 @@ public partial class Users : Window
         msgBox.Show();
     }
     
+    private void UpdateButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        UserDataGrid.ItemsSource = null;
+        UserDataGrid.ItemsSource = dtbl.DefaultView;
+        UserDataGrid.Items.Refresh();
+    }
+    
     private void ButtonDelete_OnClick(object sender, RoutedEventArgs e)
     {
-        
+        DeleteUserBox deleteUserBox = new DeleteUserBox();
+        deleteUserBox.Show();
     }
+
+    #endregion
 
     #region Window Properties
 
@@ -60,6 +81,17 @@ public partial class Users : Window
     private void ButtonAdd_OnMouseLeave(object sender, MouseEventArgs e)
     {
         ButtonAdd.Background = Brushes.Transparent;
+    }
+    private void UpdateButton_OnMouseEnter(object sender, MouseEventArgs e)
+    {
+        UpdateButton.Background = Brushes.Chocolate;
+        UpdateButton.Foreground = Brushes.WhiteSmoke;
+        UpdateButton.Opacity = 1;
+    }
+    
+    private void UpdateButton_OnMouseLeave(object sender, MouseEventArgs e)
+    {
+        UpdateButton.Background = Brushes.Transparent;
     }
 
     private void ButtonDelete_OnMouseEnter(object sender, MouseEventArgs e)

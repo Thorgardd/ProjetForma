@@ -47,7 +47,7 @@
                   ColumnWidth="*">
         </DataGrid>
         
-        <StackPanel Margin="0,100,520,0">
+        <StackPanel Margin="0,60,520,0">
             <Button x:Name="ButtonAdd" 
                     Content="AJOUTER" 
                     Width="100" 
@@ -56,6 +56,15 @@
                     MouseEnter="ButtonAdd_OnMouseEnter"
                     MouseLeave="ButtonAdd_OnMouseLeave"
                     Click="ButtonAdd_OnClick"/>
+            
+            <Button Width="100"
+                    Height="50"
+                    Margin="0,25,0,0"
+                    Content="ACTUALISER"
+                    x:Name="UpdateButton"
+                    Click="UpdateButton_OnClick"
+                    MouseEnter="UpdateButton_OnMouseEnter"
+                    MouseLeave="UpdateButton_OnMouseLeave"/>
         
             <Button x:Name="ButtonDelete" 
                     Content="SUPPRIMER" 

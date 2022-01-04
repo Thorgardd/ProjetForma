@@ -163,3 +163,5 @@ C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows
 C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows\Interfaces\Moderation.baml
 C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows\Interfaces\AddUserBox.g.cs
 C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows\Interfaces\AddUserBox.baml
+C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows\Interfaces\DeleteUserBox.g.cs
+C:\Users\jerem\Desktop\C#\Perso\ProjetForma\ProjetForma\obj\Debug\net6.0-windows\Interfaces\DeleteUserBox.baml
