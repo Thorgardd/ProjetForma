@@ -52,8 +52,7 @@ public partial class Users : Window
     private void UpdateButton_OnClick(object sender, RoutedEventArgs e)
     {
         UserDataGrid.ItemsSource = null;
-        UserDataGrid.ItemsSource = dtbl.DefaultView;
-        UserDataGrid.Items.Refresh();
+        
     }
     
     private void ButtonDelete_OnClick(object sender, RoutedEventArgs e)

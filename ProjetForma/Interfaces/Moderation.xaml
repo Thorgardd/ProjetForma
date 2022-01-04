@@ -10,23 +10,22 @@
         WindowStyle="None"
         WindowState="Normal"
         WindowStartupLocation="CenterScreen"
-        Width="500"
-        Height="300"
+        Width="720"
+        Height="440"
         AllowsTransparency="True"
         AllowDrop="True"
         ResizeMode="NoResize">
+    
     <Grid>
-        
-        <Grid.RowDefinitions>
-            <RowDefinition Height="4*" />
-            <RowDefinition Height="7*" />
-            <RowDefinition Height="4*" />
-        </Grid.RowDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
+
+
         <!-- Gradient on background -->
         <Border CornerRadius="10" Grid.RowSpan="3" Grid.ColumnSpan="2">
             <Border.Background>
@@ -36,5 +35,23 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
+        
+        <StackPanel>
+            <Button Height="50"
+                    Width="100"
+                    Margin="0,150,500,0"
+                    Content="Quitter"
+                    x:Name="QuitButton"
+                    Click="QuitButton_OnClick"/>
+        </StackPanel>
+        
+        <DataGrid x:Name="PublicationDataGrid" 
+                  Width="500" 
+                  Height="300" 
+                  Margin="150,0,0,0"
+                  IsReadOnly="True"
+                  AutoGenerateColumns="True"
+                  ColumnWidth="*">
+        </DataGrid>
     </Grid>
 </Window>

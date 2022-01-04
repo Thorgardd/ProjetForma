@@ -71,7 +71,28 @@ namespace ProjetForma.Interfaces
 
         private void AddButton_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                string name = NameBox.Text;
+                int password = rnd.Next(defaultPassword.Length);
+                SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "INSERT INTO [project].[dbo].[partner] VALUES (@name, @password, @isAdmin)";
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@password", defaultPassword[password]);
+                cmd.Parameters.AddWithValue("@isAdmin", IsAdminBox.IsChecked);
+                cmd.Connection = conn;
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                conn.Close();
+                Close();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
         }
     }
 }
