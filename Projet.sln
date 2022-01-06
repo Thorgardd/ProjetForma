@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminApp", "AdminApp\AdminApp.csproj", "{05B3229D-E486-4CFD-822C-EE4679921206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYP_Error_WebAPI", "TYP_Error_WebAPI\TYP_Error_WebAPI.csproj", "{EBCBACB8-43D0-43CE-8376-33F2AE289B23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05B3229D-E486-4CFD-822C-EE4679921206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B3229D-E486-4CFD-822C-EE4679921206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B3229D-E486-4CFD-822C-EE4679921206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B3229D-E486-4CFD-822C-EE4679921206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCBACB8-43D0-43CE-8376-33F2AE289B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCBACB8-43D0-43CE-8376-33F2AE289B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCBACB8-43D0-43CE-8376-33F2AE289B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCBACB8-43D0-43CE-8376-33F2AE289B23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
