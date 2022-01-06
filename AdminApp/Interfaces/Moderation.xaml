@@ -14,7 +14,8 @@
         Height="440"
         AllowsTransparency="True"
         AllowDrop="True"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        Loaded="BindDataGrid">
     
     <Grid>
 
@@ -36,12 +37,22 @@
             </Border.Background>
         </Border>
         
-        <StackPanel>
+        <StackPanel Margin="0,150,500,0">
             <Button Height="50"
                     Width="100"
-                    Margin="0,150,500,0"
-                    Content="Quitter"
+                    x:Name="DeleteButton"
+                    Content="SUPPRIMER"
+                    MouseEnter="DeleteButton_OnMouseEnter"
+                    MouseLeave="DeleteButton_OnMouseLeave"
+                    Click="DeleteButton_OnClick"/>
+            
+            <Button Height="50"
+                    Width="100"
+                    Margin="0,25,0,0"
+                    Content="QUITTER"
                     x:Name="QuitButton"
+                    MouseEnter="QuitButton_OnMouseEnter"
+                    MouseLeave="QuitButton_OnMouseLeave"
                     Click="QuitButton_OnClick"/>
         </StackPanel>
         

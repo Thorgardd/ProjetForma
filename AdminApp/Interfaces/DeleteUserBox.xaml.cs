@@ -26,7 +26,7 @@ namespace AdminApp.Interfaces
             SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "DELETE FROM [project].[dbo].[partner] WHERE pid=@pid";
+            cmd.CommandText = "DELETE FROM [TYP_ERROR].[dbo].[partner] WHERE pid=@pid";
             cmd.Parameters.AddWithValue("@pid", pidTmp);
             cmd.Connection = conn;
             var reader = cmd.ExecuteReader();

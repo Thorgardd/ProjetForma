@@ -11,7 +11,7 @@ namespace AdminApp.Interfaces;
 
 public partial class Users : Window
 {
-    DataTable dtbl = new DataTable("partner");
+    DataTable dtbl = new ("partner");
     public Users()
     {
         InitializeComponent();
@@ -29,7 +29,7 @@ public partial class Users : Window
         SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
         conn.Open();
         SqlCommand cmd = new SqlCommand();
-        cmd.CommandText = "SELECT * FROM [project].[dbo].[partner]";
+        cmd.CommandText = "SELECT * FROM [TYP_ERROR].[dbo].[partner]";
         cmd.Connection = conn;
         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
         adapter.Fill(dtbl);

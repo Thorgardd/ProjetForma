@@ -33,7 +33,7 @@ namespace AdminApp.Interfaces
                 SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "INSERT INTO [project].[dbo].[partner] VALUES (@name, @password, @isAdmin)";
+                cmd.CommandText = "INSERT INTO [TYP_ERROR].[dbo].[partner] VALUES (@name, @password, @isAdmin)";
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@password", defaultPassword[password]);
                 cmd.Parameters.AddWithValue("@isAdmin", IsAdminBox.IsChecked);
