@@ -15,7 +15,8 @@
         AllowsTransparency="True"
         AllowDrop="True"
         ResizeMode="NoResize"
-        Loaded="BindDataGrid">
+        Loaded="BindDataGrid"
+        MouseDown="Moderation_OnMouseDown">
     
     <Grid>
 
@@ -37,7 +38,7 @@
             </Border.Background>
         </Border>
         
-        <StackPanel Margin="0,150,500,0">
+        <StackPanel Margin="0,125,600,0">
             <Button Height="50"
                     Width="100"
                     x:Name="DeleteButton"
@@ -45,6 +46,15 @@
                     MouseEnter="DeleteButton_OnMouseEnter"
                     MouseLeave="DeleteButton_OnMouseLeave"
                     Click="DeleteButton_OnClick"/>
+            
+            <Button Width="100"
+                    Height="50"
+                    Margin="0,25,0,0"
+                    Content="ACTUALISER"
+                    x:Name="UpdateButton"
+                    Click="UpdateButton_OnClick"
+                    MouseEnter="UpdateButton_OnMouseEnter"
+                    MouseLeave="UpdateButton_OnMouseLeave"/>
             
             <Button Height="50"
                     Width="100"
@@ -56,12 +66,13 @@
                     Click="QuitButton_OnClick"/>
         </StackPanel>
         
-        <DataGrid x:Name="PublicationDataGrid" 
-                  Width="500" 
+        <DataGrid x:Name="HelpDataGrid" 
+                  Width="550"
                   Height="300" 
-                  Margin="150,0,0,0"
+                  Margin="80,0,0,0"
                   IsReadOnly="True"
                   AutoGenerateColumns="True"
+                  CanUserResizeColumns="True"
                   ColumnWidth="*">
         </DataGrid>
     </Grid>

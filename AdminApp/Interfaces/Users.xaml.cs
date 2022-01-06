@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Data;
@@ -11,7 +12,6 @@ namespace AdminApp.Interfaces;
 
 public partial class Users : Window
 {
-    DataTable dtbl = new ("partner");
     public Users()
     {
         InitializeComponent();
@@ -26,6 +26,7 @@ public partial class Users : Window
 
     private void GetUserInfos()
     {
+        DataTable dtbl = new ("partner");
         SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
         conn.Open();
         SqlCommand cmd = new SqlCommand();
@@ -34,7 +35,7 @@ public partial class Users : Window
         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
         adapter.Fill(dtbl);
         dtbl.Columns.Remove("password");
-        dtbl.Columns[0].ColumnName = "PId";
+        dtbl.Columns[0].ColumnName = "PID";
         dtbl.Columns[1].ColumnName = "Nom";
         dtbl.Columns[2].ColumnName = "Administrateur";
         UserDataGrid.ItemsSource = dtbl.DefaultView;
@@ -52,7 +53,7 @@ public partial class Users : Window
     private void UpdateButton_OnClick(object sender, RoutedEventArgs e)
     {
         UserDataGrid.ItemsSource = null;
-        
+        GetUserInfos();
     }
     
     private void ButtonDelete_OnClick(object sender, RoutedEventArgs e)

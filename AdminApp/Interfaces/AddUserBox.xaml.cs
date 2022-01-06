@@ -4,19 +4,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using AdminApp.Database;
 using Microsoft.Data.SqlClient;
 
 namespace AdminApp.Interfaces
 {
     public partial class AddUserBox : Window
     {
-        #region Attributs
-
-        string[] defaultPassword = new []{"wearehere", "defaultpassword", "syracuse", "iwillbechanged"};
-        private Random rnd = new Random();
-
-        #endregion
-
         public AddUserBox()
         {
             InitializeComponent();
@@ -26,28 +20,15 @@ namespace AdminApp.Interfaces
 
         private void AddButton_OnClick(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                string name = NameBox.Text;
-                int password = rnd.Next(defaultPassword.Length);
-                SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
-                conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "INSERT INTO [TYP_ERROR].[dbo].[partner] VALUES (@name, @password, @isAdmin)";
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@password", defaultPassword[password]);
-                cmd.Parameters.AddWithValue("@isAdmin", IsAdminBox.IsChecked);
-                cmd.Connection = conn;
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-                conn.Close();
-                Close();
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
-            }
+            bool isAdmin = false;
+            DataContext DC = new DataContext();
+            if (IsAdminBox.IsChecked == true)
+                isAdmin = true;
+            else if (IsAdminBox.IsChecked == false)
+                isAdmin = false;
+            
+            DC.AddUserControl(NameBox.Text, isAdmin);
+            Close();
         }
         
         private void MsgBox_OnMouseDown(object sender, MouseButtonEventArgs e)

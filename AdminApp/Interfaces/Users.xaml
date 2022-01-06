@@ -41,7 +41,6 @@
                   Width="500" 
                   Height="300" 
                   Margin="150,0,0,0"
-                  ItemsSource="DataUser"
                   IsReadOnly="True"
                   AutoGenerateColumns="True"
                   ColumnWidth="*">
