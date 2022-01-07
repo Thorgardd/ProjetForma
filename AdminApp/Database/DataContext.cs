@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using AdminApp.Interfaces;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -35,26 +36,49 @@ namespace AdminApp.Database
 
         public void DeleteUserControl(string pidBoxValue)
         {
-            SqlConnection conn = new SqlConnection(ConnexionString);
-            conn.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "DELETE FROM [TYP_ERROR].[dbo].[partner] WHERE pid=@pid";
-            cmd.Parameters.AddWithValue("@pid", Convert.ToInt32(pidBoxValue));
-            cmd.Connection = conn;
-            var reader = cmd.ExecuteReader();
-            cmd.Dispose();
-            conn.Close();
+            try
+            {
+                string pidValue = pidBoxValue;
+                SqlConnection conn = new SqlConnection(ConnexionString);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "DELETE FROM [TYP_ERROR].[dbo].[partner] WHERE pid=@pid";
+                cmd.Parameters.AddWithValue("@pid", pidValue);
+                cmd.Connection = conn;
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public void DeleteHelpControl(string hidBoxValue)
         {
-            SqlConnection conn = new SqlConnection();
+            SqlConnection conn = new SqlConnection(ConnexionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "DELETE FROM [TYP_ERROR].[dbo].[help] WHERE hid=@hid";
             cmd.Parameters.AddWithValue("@hid", Convert.ToInt32(hidBoxValue));
             cmd.Connection = conn;
-            var reader = cmd.ExecuteReader();
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+        public void CloseThread(string yidBoxValue, int isClosed)
+        {
+            SqlConnection conn = new SqlConnection(ConnexionString);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "UPDATE [TYP_ERROR].dbo.why SET status=@status WHERE yid=@yid";
+            cmd.Parameters.AddWithValue("@status", isClosed);
+            cmd.Parameters.AddWithValue("@yid", yidBoxValue);
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
             cmd.Dispose();
             conn.Close();
         }

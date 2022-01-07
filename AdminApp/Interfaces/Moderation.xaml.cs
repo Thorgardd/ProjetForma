@@ -19,12 +19,12 @@ public partial class Moderation : Window
 
     private void BindDataGrid(object sender, RoutedEventArgs routedEventArgs)
     {
-        GetWhyInfos();
+        GetHelpInfos();
     }
 
-    private void GetWhyInfos()
+    private void GetHelpInfos()
     {
-        DataTable dtbl = new ("why");
+        DataTable dtbl = new ("help");
         SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
         conn.Open();
         SqlCommand cmd = new SqlCommand();
@@ -45,7 +45,7 @@ public partial class Moderation : Window
     private void UpdateButton_OnClick(object sender, RoutedEventArgs e)
     {
         HelpDataGrid.ItemsSource = null;
-        GetWhyInfos();
+        GetHelpInfos();
     }
     
     private void DeleteButton_OnClick(object sender, RoutedEventArgs e)

@@ -53,7 +53,7 @@ namespace AdminApp.Interfaces
 
         private void DeleteButton_OnMouseEnter(object sender, MouseEventArgs e)
         {
-            DeleteButton.Background = Brushes.LimeGreen;
+            DeleteButton.Background = Brushes.DarkGreen;
             DeleteButton.Foreground = Brushes.White;
             DeleteButton.Opacity = 1;
         }

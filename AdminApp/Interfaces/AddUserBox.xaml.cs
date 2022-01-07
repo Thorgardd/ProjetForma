@@ -64,7 +64,7 @@ namespace AdminApp.Interfaces
 
         private void AddButton_OnMouseEnter(object sender, MouseEventArgs e)
         {
-            AddButton.Background = Brushes.LimeGreen;
+            AddButton.Background = Brushes.DarkGreen;
             AddButton.Foreground = Brushes.White;
             AddButton.Opacity = 1;
         }

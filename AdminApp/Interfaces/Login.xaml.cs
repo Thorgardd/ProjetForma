@@ -28,7 +28,7 @@ namespace AdminApp.Interfaces
             SqlConnection conn = new SqlConnection(Database.DataContext.ConnexionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = $"SELECT * FROM [TYP_ERROR].[dbo].[partner] WHERE name=@Username AND password=@Password";
+            cmd.CommandText = "SELECT * FROM [TYP_ERROR].[dbo].[partner] WHERE name=@Username AND password=@Password";
             cmd.Parameters.AddWithValue("@Username", name);
             cmd.Parameters.AddWithValue("@Password", password);
             cmd.Connection = conn;

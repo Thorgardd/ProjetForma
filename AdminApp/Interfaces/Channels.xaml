@@ -14,7 +14,9 @@
         Height="440"
         AllowsTransparency="True"
         AllowDrop="True"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        Loaded="BindDataGrid"
+        MouseDown="Channels_OnMouseDown">
     
     <Grid>
 
@@ -36,12 +38,33 @@
             </Border.Background>
         </Border>
         
-        <StackPanel>
+        <StackPanel Margin="0,90,550,0">
+            
             <Button Height="50"
                     Width="100"
-                    Margin="0,150,500,0"
-                    Content="Quitter"
+                    Content="MODIFIER"
+                    x:Name="ModifyButton"
+                    Margin="0,25,0,0"
+                    MouseEnter="ModifyButton_OnMouseEnter"
+                    MouseLeave="ModifyButton_OnMouseLeave"
+                    Click="ModifyButton_OnClick"/>
+            
+            <Button Height="50"
+                    Width="100"
+                    Content="ACTUALISER"
+                    x:Name="UpdateButton"
+                    Margin="0,25,0,0"
+                    MouseEnter="UpdateButton_OnMouseEnter"
+                    MouseLeave="UpdateButton_OnMouseLeave"
+                    Click="UpdateButton_OnClick"/>
+            
+            <Button Height="50"
+                    Width="100"
+                    Content="QUITTER"
                     x:Name="QuitButton"
+                    Margin="0,25,0,0"
+                    MouseEnter="QuitButton_OnMouseEnter"
+                    MouseLeave="QuitButton_OnMouseLeave"
                     Click="QuitButton_OnClick"/>
         </StackPanel>
         
