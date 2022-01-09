@@ -1,0 +1,38 @@
+.hero {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+    grid-template-areas:
+        "one one one two two"
+        "three three wave four four"
+        "three three five six six";
+}
+
+.hero > img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.wave {
+    grid-area: wave;
+    align-self: center;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}

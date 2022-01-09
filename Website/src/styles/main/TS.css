@@ -1,0 +1,22 @@
+.tsmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+.topic {
+    padding : 1rem;
+    border-radius: 1em;
+    display: block;
+    background-color: var(--white);
+    filter: drop-shadow(0px 3px 3px var(--shadow));
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.gallery .name {
+    padding: 5px;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+:root {
+    --white: #ffffff;
+    --background-white: #f4f4f5;
+    --shadow: rgba(0, 0, 0, 0.233);
+
+    --black: #36353d;
+    --background-black: #2b2a33;
+
+    --valid: #43a047;
+    --pending: #e67e22;
+    --invalid: #e53935;
+}
+
+html {
+    background-color: red;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    color: var(--black);
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}

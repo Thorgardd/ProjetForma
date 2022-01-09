@@ -1,0 +1,62 @@
+[
+  {
+    "tid": 123,
+    "name": "python",
+    "description": "Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet.",
+    "image": "./assets/img/mock/logos/Python.png"
+  },
+  {
+    "tid": 234,
+    "name": "Java",
+    "description": "Java est une technique informatique développée initialement par Sun Microsystems puis acquise par Oracle à la suite du rachat de l'entreprise. Défini à l'origine comme un langage de programmation, Java a évolué pour devenir un ensemble cohérent d'éléments techniques et non techniques.",
+    "image": "./assets/img/mock/logos/Java.png"
+  },
+  {
+    "tid": 345,
+    "name": "JavaScript",
+    "description": "JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web.",
+    "image": "./assets/img/mock/logos/JS.png"
+  },
+  {
+    "tid": 456,
+    "name": "C#",
+    "description": "C# est un langage de programmation orientée objet, commercialisé par Microsoft depuis 2002 et destiné à développer sur la plateforme Microsoft .NET.",
+    "image": "./assets/img/mock/logos/Csharp.png"
+  },
+  {
+    "tid": 567,
+    "name": "PHP",
+    "description": "PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.",
+    "image": "./assets/img/mock/logos/PHP.png"
+  },
+  {
+    "tid": 678,
+    "name": "C++",
+    "description": "C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes, dont la programmation procédurale, la programmation orientée objet et la programmation générique.",
+    "image": "./assets/img/mock/logos/C++.png"
+  },
+  {
+    "tid": 890,
+    "name": "R",
+    "description": "R est un langage de programmation et un logiciel libre destiné aux statistiques et à la science des données soutenu par la R Foundation for Statistical Computing. Il fait partie de la liste des paquets GNU et est écrit en C (langage), Fortran et R.",
+    "image": "./assets/img/mock/logos/R.png"
+  },
+  {
+    "tid": 987,
+    "name": "TypeScript",
+    "description": "ypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. Il s'agit d'un sur-ensemble syntaxique strict de JavaScript.",
+    "image": "./assets/img/mock/logos/TS.png"
+  },
+  {
+    "tid": 876,
+    "name": "Swift",
+    "description": "Swift est un langage de programmation objet compilé, multi-paradigmes, qui se veut simple, performant et sûr. Il est développé en open source.",
+    "image": "./assets/img/mock/logos/Swift.png"
+  },
+  {
+    "tid": 654,
+    "name": "Objective-C",
+    "description": "Objective-C est un langage de programmation orienté objet réflexif. C'est une extension du C ANSI, comme le C++, mais qui se distingue de ce dernier par sa distribution dynamique des messages, son typage faible ou fort, son typage dynamique et son chargement dynamique.",
+    "image": "./assets/img/mock/logos/ObjectiveC.png"
+  }
+]

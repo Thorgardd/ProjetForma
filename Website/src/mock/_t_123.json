@@ -1,0 +1,35 @@
+{
+    "topic": {
+      "tid": "123",
+      "name": "python",
+      "description": "Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet.",
+      "image": "/assets/img/mock/logos/Python.png"
+    },
+    "Whys": [
+      {
+        "yid": "987",
+        "name": "do aute ad nulla occaecat commodo aute mollit aute ea",
+        "description": "incididunt aliqua proident non magna dolor dolore adipisicing voluptate cupidatat tempor nulla enim officia sit aute culpa sit tempor cillum occaecat ipsum cupidatat amet qui veniam eiusmod non esse nulla pariatur irure Lorem cupidatat nulla sint nisi fugiat sint aliquip sit irure esse sint ex eiusmod labore velit laborum eiusmod"
+      },
+      {
+        "yid": "61d84b778217a4a3e9ed6e84",
+        "name": "occaecat enim magna cupidatat ipsum quis Lorem irure commodo dolore",
+        "description": "aliqua irure nisi eu velit velit elit voluptate commodo excepteur veniam elit proident adipisicing laboris sunt sit sunt nulla et culpa irure culpa eiusmod nulla commodo do esse elit voluptate nulla ea dolor veniam tempor aliqua ullamco magna ex adipisicing ad eiusmod id officia ipsum non duis enim proident veniam"
+      },
+      {
+        "yid": "61d84b772942f1423fd23587",
+        "name": "culpa pariatur proident ullamco aute minim duis ut duis qui",
+        "description": "ad ipsum commodo mollit incididunt culpa non minim cillum ut officia tempor nisi pariatur quis proident eiusmod laborum eiusmod laborum velit aliqua do elit dolor proident aliqua eiusmod elit irure ut do veniam voluptate sunt ea laborum eiusmod ex officia ex magna fugiat culpa anim labore voluptate tempor adipisicing voluptate"
+      },
+      {
+        "yid": "61d84b775f599e4dc2995db6",
+        "name": "magna deserunt labore aute veniam nulla velit incididunt pariatur do",
+        "description": "amet ipsum eiusmod deserunt elit non officia voluptate est do quis consectetur ullamco tempor elit qui ad sunt fugiat sit elit nisi consectetur enim aute est irure laboris incididunt esse est tempor labore nulla elit excepteur reprehenderit velit enim aliqua et ipsum laborum excepteur est laboris id commodo eu excepteur"
+      },
+      {
+        "yid": "61d84b77717d6b5dcb035f6d",
+        "name": "proident ad aute est commodo eu consequat laborum ex exercitation",
+        "description": "aliqua minim minim proident exercitation voluptate nisi ullamco esse ipsum magna ut enim duis aliqua aliqua anim occaecat amet anim excepteur et cillum ex sit sit id commodo occaecat duis quis exercitation veniam magna consequat mollit cillum do commodo est et pariatur sunt qui incididunt duis nostrud consequat proident irure"
+      }
+    ]
+  }

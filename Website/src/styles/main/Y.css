@@ -1,0 +1,74 @@
+.Ymap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5rem;
+}
+
+.lead {
+    max-width: 50rem;
+}
+
+.lead h2 {
+    margin-top: 0;
+}
+
+.Hs {
+    max-width: 40rem;
+}
+
+.y {
+    text-align: left;
+}
+
+.H {
+    text-align: right;
+}
+
+.H > p,
+.lead > .gallery > p {
+    margin-top: 0;
+}
+.avatar {
+    width: 3rem;
+}
+
+.lead .head {
+    justify-content: flex-start;
+}
+
+.H > .head > .avatar {
+    transform: scaleX(-1);
+}
+
+.lead  .head > .name {
+    text-align: left;
+}
+
+.H  .head > .name {
+    text-align: right;
+}
+
+.edit {
+    align-self: center;
+    padding: 0 1rem;
+    color: var(--black);
+}
+
+
+.name {
+    flex-grow: 1;
+    vertical-align: middle;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.syntax {
+    background: var(--background-black);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1em;
+}

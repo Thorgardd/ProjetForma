@@ -1,0 +1,21 @@
+.App {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: var(--secondary-white);
+
+    grid-template:
+        "Header" 4rem
+        "Main" auto /
+        auto;
+}
+
+Header {
+    grid-area: Header;
+}
+
+Main {
+    grid-area: Main;
+    background-color: var(--background-white);
+    padding-bottom: 50px;
+}

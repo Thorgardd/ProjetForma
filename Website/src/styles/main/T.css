@@ -1,0 +1,46 @@
+.Tmap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 0 5rem
+}
+
+.prez {
+    max-width: 20rem;
+    margin: 1rem;
+}
+
+.list {
+    display: inline-block;
+    max-width: 60rem;
+    margin: 1rem;
+}
+
+.gallery {
+    padding: 1rem;
+    border-radius: 1em;
+    border-left : 1em solid;
+    display: block;
+    background-color: var(--white);
+    filter: drop-shadow(0px 3px 3px var(--shadow));
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.gallery.neutral {
+    border-left : 0 solid;
+}
+
+.list {
+    text-align: left;
+}
+
+.add {
+    text-align: center;
+    background: var(--valid);
+    display: block;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px;
+}

@@ -1,0 +1,101 @@
+.homemap {
+    height: 100%;
+}
+
+.round {
+    position: relative;
+    top: -2rem;
+    width: 100%;
+    color: var(--background-black);
+}
+
+.content {
+    margin-top: -2.5rem;
+    background-color: var(--background-black);
+    color: var(--white);
+    padding: 5rem;
+}
+
+a.button {
+    background: var(--valid);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--white);
+    font-weight: bold;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+#systit {
+    padding: 5rem 0;
+}
+
+.container {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contained {
+    display: inline-block;
+    max-width: 20rem;
+    margin: 1rem;
+}
+
+.box {
+    border-radius: 1em;
+    padding: 1em;
+    height: 24rem;
+}
+
+#topic {
+    background-color: var(--invalid);
+}
+
+#why {
+    background-color: var(--pending);
+}
+
+#partner {
+    background-color: var(--valid);
+}
+
+.right {
+    margin: 100px 0;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.left {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.vl-red {
+    border-left: 6px solid var(--invalid);
+}
+
+.vl-org {
+    border-right: 6px solid var(--pending);
+}
+
+.vl-grn {
+    border-left: 6px solid var(--valid);
+}
+
+h1 > b {
+    color: var(--valid);
+}
+.content.bottom {
+    background-color: var(--background-white);
+    color: var(--black);
+}
+
+.round.bottom {
+    background-color: var(--background-black);
+    width: 100%;
+    color: var(--background-white);
+
+}
